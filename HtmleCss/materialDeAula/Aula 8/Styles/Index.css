@@ -1,0 +1,114 @@
+*{
+    padding: 0%;
+    margin:0%  ; 
+    
+}
+
+:root{
+    --corPrimaria :rgb(123, 177, 132);
+    --corSecundaria:rgb(73, 192, 143);
+    --branco :rgb(103, 205, 212);
+    --preto :rgb(255, 255, 255); 
+    --active: rgb(240, 240, 240);
+
+
+}
+h1{
+     color:var(--preto);
+}
+header, footer{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width:100%;
+    height: 60px;
+    background-color: var(--corPrimaria);
+}
+    
+
+#TabelaExcel{
+    width: 400px;
+    margin: 30px;
+    border-collapse: collapse;
+}
+#TabelaProdutos{
+    width: 600px;
+    margin: 30px;
+    border-collapse: collapse;
+    
+    
+    
+}
+
+th, td{
+    padding: 5px;
+    border: 1px solid var(--preto);
+    user-select: none;
+}
+
+th{
+    background-color: var(--branco);
+    color: var(--preto);
+
+}
+.center{    
+    display: flex;
+    justify-content: center;
+    align-items:center;
+
+}
+
+td {
+    background-color:var(--active);
+}
+
+th:Hover{
+    background-color: var(--corSecundaria);
+    cursor: pointer;
+}
+
+td:active{
+    background-color: var(--ativo);
+    color: var(--corSecundaria);
+    border: solid var(--corSecundaria) 1px;
+    user-select: none;
+
+} 
+
+input{
+  width: 300px;
+  padding: 10px;
+  border-radius:  10px;
+  transition: 1s;
+  background-color: aliceblue;
+
+}
+ :focus{ 
+     transition: 1s;
+     background-color: var(--corPrimmaria);
+     color: var(--branco);
+     border-radius: 0px;
+    }
+
+th:empty{
+    background-color:transparent;
+    border: none;
+}
+
+header{
+     position: fixed;
+     top: 1px; /*serve para fixar a tabela em cima do cabeçario*/
+    
+}
+thead{
+    position: sticky;
+    top: 58px;
+}
+main{
+    padding-top:40px ; 
+}
+
+#apenasScroll{
+    width: 1px;
+    height: 1000px;
+}
